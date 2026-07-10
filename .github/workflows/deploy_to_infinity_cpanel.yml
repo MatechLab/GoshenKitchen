@@ -34,7 +34,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT || 21 }}
           local-dir: ./dist/
-          server-dir: ${{ secrets.FTP_REMOTE_DIR }}/
+          server-dir: ./htdocs/
           dangerous-clean-slate: false
           exclude: |
             **/.DS_Store
